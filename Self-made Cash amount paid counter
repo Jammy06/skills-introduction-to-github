@@ -5,28 +5,34 @@ int main() {
     int fifty = 0, one_hundred = 0, two_hundred = 0, five_hundred = 0, one_thousand = 0;
     int i = 0;
     int amount[5] = {50,100, 200, 500, 1000};
-    while (i >= 0 && i < 5) {
+    while (i >= 0) {
         cout << "Cash paid: ";
         cin >> i;
         if (i == 0) {
             fifty ++;
             cout << "Fifty: " << fifty << endl << "One hundred: " << one_hundred << endl << "Two hundred: " << two_hundred << endl << "Five hundred: " << five_hundred << endl << "One thousand: " << one_thousand << endl;
         }
-        if (i == 1) {
+        else if (i == 1) {
             one_hundred ++;
             cout << "Fifty: " << fifty << endl << "One hundred: " << one_hundred << endl << "Two hundred: " << two_hundred << endl << "Five hundred: " << five_hundred << endl << "One thousand: " << one_thousand << endl;
         }
-        if (i == 2) {
+        else if (i == 2) {
             two_hundred ++;
             cout << "Fifty: " << fifty << endl << "One hundred: " << one_hundred << endl << "Two hundred: " << two_hundred << endl << "Five hundred: " << five_hundred << endl << "One thousand: " << one_thousand << endl;
         }
-        if (i == 3) {
+        else if (i == 3) {
             five_hundred ++;
             cout << "Fifty: " << fifty << endl << "One hundred: " << one_hundred << endl << "Two hundred: " << two_hundred << endl << "Five hundred: " << five_hundred << endl << "One thousand: " << one_thousand << endl;
         }
-        if (i ==4) {
+        else if (i ==4) {
             one_thousand ++;
             cout << "Fifty: " << fifty << endl << "One hundred: " << one_hundred << endl << "Two hundred: " << two_hundred << endl << "Five hundred: " << five_hundred << endl << "One thousand: " << one_thousand << endl;
+        }
+        else if (i < 0) {
+            break;
+        }
+        else {
+            cout << "Invalid Input" << endl;
         }
     }
 }
