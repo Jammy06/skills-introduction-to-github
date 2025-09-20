@@ -24,7 +24,7 @@ int main() {
             five_hundred ++;
             cout << "Fifty: " << fifty << endl << "One hundred: " << one_hundred << endl << "Two hundred: " << two_hundred << endl << "Five hundred: " << five_hundred << endl << "One thousand: " << one_thousand << endl;
         }
-        else if (i ==4) {
+        else if (i == 4) {
             one_thousand ++;
             cout << "Fifty: " << fifty << endl << "One hundred: " << one_hundred << endl << "Two hundred: " << two_hundred << endl << "Five hundred: " << five_hundred << endl << "One thousand: " << one_thousand << endl;
         }
